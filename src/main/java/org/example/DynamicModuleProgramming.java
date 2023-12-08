@@ -1,5 +1,4 @@
 package org.example;
-
 /**
  * time complexity O(N)
  * spatial complexity O(N)
@@ -16,15 +15,15 @@ public class DynamicModuleProgramming {
             }
         }
     }
-    private static int fibonacci(int n){
-        if (n <= 1){
+    private static int fibonacci(int n) {
+        if (n <= 1) {
             return n;
         }
         int[] cache = new int[n + 1];
         cache[0] = 0;
         cache[1] = 1;
         for (int i = 2; i <= n; i++) {
-            cache[i] = cache[i -1] + cache[i - 2];
+            cache[i] = cache[i - 1] + cache[i - 2];
         }
         return cache[n];
     }

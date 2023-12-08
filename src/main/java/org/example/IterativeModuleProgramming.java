@@ -1,5 +1,4 @@
 package org.example;
-
 /**
  * time complexity O(n)
  * spatial complexity O(1)
@@ -15,13 +14,12 @@ public class IterativeModuleProgramming {
         System.out.println("Fibonacci Series till " + n + " terms:");
         for (int i = 1; i <= n; i++) {
             System.out.print(num1);
-            if (i < n){
+            if (i < n) {
                 System.out.print(", ");
             }
             int num3 = num1 + num2;
             num1 = num2;
             num2 = num3;
-
         }
     }
 }
